@@ -13,7 +13,7 @@ struct GoodReadsRedesignApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Library()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
